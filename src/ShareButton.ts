@@ -1,4 +1,5 @@
-import EventHandler from './EventHandler';
+import EventHandler from './DOMEventHandler';
+import DOMEventHandler from './DOMEventHandler';
 
 /**
  *  @deprecated Não utilizar essa classe concreta.
@@ -10,7 +11,7 @@ class ShareButton {
   private eventhandler: EventHandler;
 
   constructor(private url: string) {
-    this.eventhandler = new EventHandler();
+    this.eventhandler = new DOMEventHandler();
   }
 
   bind(_class: string, socialNetwork: string) {

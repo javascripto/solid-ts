@@ -1,10 +1,11 @@
 import AbstractLinkShareButton from './AbstractLinkShareButton';
+import EventHandler from './EventHandler';
 
 export default
 class ShareButtonTwitter extends AbstractLinkShareButton {
 
-  constructor(_class: string, url: string) {
-    super(_class, url);
+  constructor(eventHandler: EventHandler, _class: string, url: string) {
+    super(eventHandler, _class, url);
   }
 
   createLink() {
