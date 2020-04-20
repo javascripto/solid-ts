@@ -1,5 +1,10 @@
 import EventHandler from './EventHandler';
 
+/**
+ *  @deprecated Não utilizar essa classe concreta.
+ * Agora é necessário criar uma nova classe que 
+ * extende da classe abstrata AbstractShareButton
+ */
 export default
 class ShareButton {
   private eventhandler: EventHandler;
